@@ -6,13 +6,14 @@ PySentinel é um mecanismo de detecção de ataques de força bruta em tempo rea
 
 🇺🇸 **English Version:**
 
-PySentinel is a lightweight real-time brute force detection engine designed to simulate core SIEM detection principles, built in Python.  
+PySentinel is a lightweight real-time brute force detection engine built in Python, designed to simulate core SIEM detection principles. 
 It simulates a simplified SIEM/IDS behavior by parsing authentication logs, detecting suspicious patterns, correlating events, and generating security alerts.
 
 ---
 ## 📌 Overview
 Brute force attacks remain one of the most common attack vectors against authentication systems.  
 PySentinel was developed to simulate detection engineering logic used in Security Operations Centers (SOC), identifying repeated failed login attempts and escalating them into actionable security alerts.
+The architecture was intentionally modular to reflect real-world detection pipelines.
 
 This project demonstrates practical knowledge of:
 
@@ -65,19 +66,25 @@ pysentinel/
 
 ---
 ## 🛠️ Technologies Used
-
 - Python 3
 - Regular Expressions
 - Log Analysis Concepts
 - Basic Detection Engineering Principles
 
 ---
+## 🧠 Detection Logic
+- Threshold-based detection
+- IP-based event correlation
+- Time-window evaluation
+- Alert severity classification
+
+---
 ## ▶️ How to Run
+```bash
 git clone https://github.com/yourusername/pysentinel-real-time-brute-force-detection.git
-
 cd pysentinel-real-time-brute-force-detection
-
 python main.py
+```
 
 ---
 ## 📊Example Output
@@ -106,6 +113,7 @@ Severity: HIGH
 Murillo Henrico W. Gonçalves
 
 Computer Science Student | Cybersecurity Enthusiast
+
 
 
 
