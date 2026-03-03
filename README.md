@@ -45,12 +45,19 @@ PySentinel automatically:
 ---
 ## 🏗️ Project Structure
 pysentinel/
+
 │
+
 ├── config.py
+
 ├── parser.py
+
 ├── detector.py
+
 ├── correlator.py
+
 ├── alert_manager.py
+
 ├── main.py
 
 
@@ -73,9 +80,13 @@ python main.py
 ---
 ## 📊Example Output
 [ALERT] Possible Brute Force Detected
+
 Source IP: 192.168.0.15
+
 Failed Attempts: 7
+
 Time Window: 60 seconds
+
 Severity: HIGH
 
 ---
@@ -89,7 +100,10 @@ Severity: HIGH
 
 ---
 ## 👨‍💻 Author
+
 Murillo Henrico W. Gonçalves
+
 Computer Science Student | Cybersecurity Enthusiast
+
 
 
