@@ -64,7 +64,6 @@ pysentinel/
 
 ---
 ## ▶️ How to Run
-
 git clone https://github.com/yourusername/pysentinel-real-time-brute-force-detection.git
 cd pysentinel-real-time-brute-force-detection
 python main.py
@@ -90,3 +89,4 @@ Severity: HIGH
 ## 👨‍💻 Author
 Murillo Henrico W. Gonçalves
 Computer Science Student | Cybersecurity Enthusiast
+
