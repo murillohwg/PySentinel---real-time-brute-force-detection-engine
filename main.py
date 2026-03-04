@@ -1,50 +1,53 @@
-import time
-
+import pyfiglet
 from core.parser import parse_log_line
 from core.detector import BruteForceDetector
 from core.correlator import EventCorrelator
 from core.alert_manager import AlertManager
 import config
 
-LOG_FILE = "data/logs.txt"
-
-detector = BruteForceDetector(threshold=5, time_window_seconds=120)
-correlator = EventCorrelator(correlation_window_seconds=300)
-alert_manager = AlertManager("data/alerts.log")
-
-
-def follow(file):
-    """
-    Fica esperando novas linhas no arquivo.
-    """
-    file.seek(0, 2)  # vai para o final do arquivo
-
-    while True:
-        line = file.readline()
-        if not line:
-            time.sleep(0.5)
-            continue
-        yield line
-
 
 def main():
-    with open(LOG_FILE, "r") as logfile:
-        loglines = follow(logfile)
+    detector = BruteForceDetector(
+        threshold=config.BRUTE_FORCE_THRESHOLD,
+        time_window_seconds=config.BRUTE_FORCE_TIME_WINDOW
+    )
 
-        for line in loglines:
+    correlator = EventCorrelator(
+        correlation_window_seconds=config.CORRELATION_WINDOW
+    )
+
+    alert_manager = AlertManager(config.ALERT_LOG_FILE)
+
+    with open(config.LOG_FILE, "r") as f:
+        for line in f:
             event = parse_log_line(line.strip())
-            if not event:
+            if event is None:
                 continue
 
             alert = detector.process_event(event)
 
             if alert:
+                correlated_alert = correlator.process_alert(alert)
                 alert_manager.handle(alert)
 
-                correlated = correlator.process_alert(alert)
-                if correlated:
-                    alert_manager.handle(correlated)
+                if correlated_alert:
+                    alert_manager.handle(correlated_alert)
 
 
 if __name__ == "__main__":
-    main()
+    ascii_banner = pyfiglet.figlet_format("PYSENTINEL")
+    print(ascii_banner)
+    print("Mini SIEM in Python - Brute Force & Multi-Stage Detection\n")
+
+    while True:
+        print("[1] Processar logs")
+        print("[2] Sair")
+
+        choice = input("Escolha uma opção: ")
+        if choice == "1":
+            main()
+        elif choice == "2":
+            print("\nEncerrando PySentinel...")
+            break
+        else:
+            print("\nOpção inválida.\n")

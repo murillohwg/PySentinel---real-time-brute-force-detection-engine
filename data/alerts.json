@@ -1,0 +1,12 @@
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 5, "time_window_seconds": 120.0}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 6, "time_window_seconds": 120.0}
+{"type": "MULTI_STAGE_ATTACK_SUSPECTED", "ip": "192.168.0.15", "alerts_count": 2}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 5, "time_window_seconds": 120.0}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 6, "time_window_seconds": 120.0}
+{"type": "MULTI_STAGE_ATTACK_SUSPECTED", "ip": "192.168.0.15", "alerts_count": 2}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 5, "time_window_seconds": 120.0}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 6, "time_window_seconds": 120.0}
+{"type": "MULTI_STAGE_ATTACK_SUSPECTED", "ip": "192.168.0.15", "alerts_count": 2}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 5, "time_window_seconds": 120.0}
+{"type": "BRUTE_FORCE_SUSPECTED", "ip": "192.168.0.15", "count": 6, "time_window_seconds": 120.0}
+{"type": "MULTI_STAGE_ATTACK_SUSPECTED", "ip": "192.168.0.15", "alerts_count": 2}

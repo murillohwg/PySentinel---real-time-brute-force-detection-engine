@@ -1,7 +1,7 @@
 
 # Arquivos
 LOG_FILE = "data/logs.txt"
-ALERT_LOG_FILE = "data/alerts.log"
+ALERT_LOG_FILE = "data/alerts.json"
 
 # Detector
 BRUTE_FORCE_THRESHOLD = 5
