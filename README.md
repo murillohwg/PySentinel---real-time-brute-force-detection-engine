@@ -46,6 +46,16 @@ PySentinel automatically:
 5. When the configured threshold is exceeded, an alert is generated.
 
 ---
+## 🧠 Architecture Diagram
+```mermaid
+graph TD
+Logs --> Parser
+Parser --> Detector
+Detector --> Correlator
+Correlator --> AlertManager
+AlertManager --> JSONAlerts
+```
+---
 ## 🏗️ Project Structure
 pysentinel/
 
@@ -62,7 +72,6 @@ pysentinel/
 ├── alert_manager.py
 
 ├── main.py
-
 
 ---
 ## 🛠️ Technologies Used
@@ -113,6 +122,7 @@ Severity: HIGH
 Murillo Henrico W. Gonçalves
 
 Computer Science Student | Cybersecurity Enthusiast
+
 
 
 
