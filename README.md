@@ -90,8 +90,8 @@ pysentinel/
 ---
 ## How to Run
 ```bash
-git clone https://github.com/yourusername/pysentinel-real-time-brute-force-detection.git
-cd pysentinel-real-time-brute-force-detection
+git clone https://github.com/yourusername/pysentinel-miniSIEM.git
+cd pysentinel-miniSIEM
 python main.py
 ```
 
