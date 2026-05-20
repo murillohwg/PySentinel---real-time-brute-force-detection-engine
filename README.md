@@ -1,4 +1,4 @@
-# 🛡️ PySentinel – Real-Time Brute Force Detection Engine
+# PySentinel – Brute Force Detection Engine
 
 🇧🇷 **Versão em Português:**  
 
@@ -10,7 +10,7 @@ PySentinel is a lightweight real-time brute force detection engine built in Pyth
 It simulates a simplified SIEM/IDS behavior by parsing authentication logs, detecting suspicious patterns, correlating events, and generating security alerts.
 
 ---
-## 📌 Overview
+## Overview
 Brute force attacks remain one of the most common attack vectors against authentication systems.  
 PySentinel was developed to simulate detection engineering logic used in Security Operations Centers (SOC), identifying repeated failed login attempts and escalating them into actionable security alerts.
 The architecture was intentionally modular to reflect real-world detection pipelines.
@@ -24,7 +24,7 @@ This project demonstrates practical knowledge of:
 - Security monitoring concepts
 
 ---
-## 🚨 Problem It Solves
+## Problem It Solves
 
 Authentication logs often contain thousands of entries.  
 Manually identifying brute force attempts is inefficient and error-prone.
@@ -37,7 +37,7 @@ PySentinel automatically:
 - Simulates a real-world SOC detection workflow
 
 ---
-## ⚙️ How It Works
+## How It Works
 
 1. Log parser extracts authentication events.
 2. Failed login attempts are filtered and normalized.
@@ -46,7 +46,7 @@ PySentinel automatically:
 5. When the configured threshold is exceeded, an alert is generated.
 
 ---
-## 🧠 Architecture Diagram
+## Architecture Diagram
 ```mermaid
 graph TD
 Logs --> Parser
@@ -56,7 +56,7 @@ Correlator --> AlertManager
 AlertManager --> JSONAlerts
 ```
 ---
-## 🏗️ Project Structure
+## Project Structure
 pysentinel/
 
 │
@@ -74,21 +74,21 @@ pysentinel/
 ├── main.py
 
 ---
-## 🛠️ Technologies Used
+## Technologies Used
 - Python 3
 - Regular Expressions
 - Log Analysis Concepts
 - Basic Detection Engineering Principles
 
 ---
-## 🧠 Detection Logic
+## Detection Logic
 - Threshold-based detection
 - IP-based event correlation
 - Time-window evaluation
 - Alert severity classification
 
 ---
-## ▶️ How to Run
+## How to Run
 ```bash
 git clone https://github.com/yourusername/pysentinel-real-time-brute-force-detection.git
 cd pysentinel-real-time-brute-force-detection
@@ -96,11 +96,12 @@ python main.py
 ```
 
 ---
-## 📊Example Output
+## Example Output
 ![Demonstração Pysentinel](https://drive.google.com/uc?export=view&id=1Mx4Hp2acbBiYKAmyiq0t4i1nh6GQ20OU) 
 
 ---
-##🚀 Future Improvements
+
+## Future Improvements
 - Configurable detection thresholds via external config file
 - Sliding time-window correlation logic
 - Alert export in JSON format
@@ -109,7 +110,7 @@ python main.py
 - Unit tests for detection validation
 
 ---
-## 👨‍💻 Author
+## Author
 
 Murillo Henrico W. Gonçalves
 
