@@ -114,6 +114,6 @@ python main.py
 
 Murillohwg
 
-Computer Science Student | Independent Cybersecurity Researcher
+> Computer Science Student | Independent Cybersecurity Researcher
 
 ---
