@@ -112,13 +112,8 @@ python main.py
 ---
 ## Author
 
-Murillo Henrico W. Gonçalves
+Murillohwg
 
-Computer Science Student | Cybersecurity Enthusiast
+Computer Science Student | Independent Cybersecurity Researcher
 
-
-
-
-
-
-
+---
