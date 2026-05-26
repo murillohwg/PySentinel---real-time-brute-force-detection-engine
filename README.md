@@ -90,7 +90,7 @@ pysentinel/
 ---
 ## How to Run
 ```bash
-git clone https://github.com/yourusername/pysentinel-miniSIEM.git
+git clone https://github.com/murillohwg/pysentinel-miniSIEM.git
 cd pysentinel-miniSIEM
 python main.py
 ```
